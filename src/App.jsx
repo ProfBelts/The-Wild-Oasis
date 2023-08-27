@@ -1,21 +1,13 @@
+/* eslint-disable no-unused-vars */
 import { styled } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
+import Button from "./ui/Button";
+import Input from "./ui/Input";
 
 function App() {
   const H1 = styled.h1`
     font-size: 30px;
     font-weight: 600;
-  `;
-
-  const Button = styled.button`
-    font-size: 1.4rem;
-    padding: 1.2rem 1.6rem;
-    font-weight: 500;
-    border: none;
-    border-radius: 7px;
-    background-color: var(--color-brand-600);
-    color: white;
-    cursor: pointer;
   `;
 
   const StyledApp = styled.main`
@@ -28,7 +20,8 @@ function App() {
       <GlobalStyles />
       <StyledApp>
         <H1>Hello World</H1>
-        <Button> Check in</Button>
+        <Button> Check In </Button>
+        <Input type="number" placeholder="Number of Guests"></Input>
       </StyledApp>
     </>
   );
