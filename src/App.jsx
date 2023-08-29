@@ -3,13 +3,9 @@ import { styled } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 import Button from "./ui/Button";
 import Input from "./ui/Input";
+import Heading from "./ui/Heading";
 
 function App() {
-  const H1 = styled.h1`
-    font-size: 30px;
-    font-weight: 600;
-  `;
-
   const StyledApp = styled.main`
     background-color: orangered;
     padding: 20px;
@@ -19,8 +15,10 @@ function App() {
     <>
       <GlobalStyles />
       <StyledApp>
-        <H1>Hello World</H1>
+        <Heading as="h1">Hello World</Heading>
         <Button> Check In </Button>
+        <Heading as="h2">Hello World</Heading>
+        <Heading as="h3">Hello World</Heading>
         <Input type="number" placeholder="Number of Guests"></Input>
       </StyledApp>
     </>
